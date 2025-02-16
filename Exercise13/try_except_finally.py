@@ -3,7 +3,7 @@ names_tuple = 'Rod', 'Jane', 'Freddy'
 
 # try block tries to execute the code and displays the original tuple
 # sorting the tuple -sorted function sorts the elements into a list
-# lists are mutable so can be changed
+# tuples are immutable, lists are mutable so can be changed
 # to change the list .append method is used to add 'bungle' and print updated list
 try:
     print("######## TRY #######")
