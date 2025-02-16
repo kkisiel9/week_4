@@ -1,6 +1,6 @@
 create_file = open('pelican.txt, "x')
 filez = open("pelican.txt", "w")
-
+# creating and opening a file for writing
 filez.write("A wonderful bird is the pelican\n")
 filez.write("His bill holds more than his belican\n")
 
