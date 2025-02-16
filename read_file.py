@@ -1,15 +1,11 @@
-opening = open("pelican.txt", "r")
-file_content = opening.read()
+opening = open("pelican.txt", "r").readlines()
 # file has been opened, and a new variable created to store its read contents
-print(type(file_content))
-# checking data type, it's string
-print(file_content)
+# checking data type, it's
+print(type(opening))
+print(opening)
 # contents printed
-word_list = file_content.split()
-# splitting the str into words/elements with each whitespace and creating a list
-print(word_list)
 
-no_lines = word_list.strip()
-while no_lines:
-    print(no_lines)
-    break
+print(f"Number of lines is", len(opening))
+
+for line in opening:
+    print(line[:-1])
