@@ -17,9 +17,9 @@ try:
     names_tuple[0] = 'Zippy'
     print("Is this code reached?")
 # the code the tries to add 'zippy' to the tuples_names
-# but it iss not a list - it is a tuple
+# but it is not a list - it is a tuple
 # tuples are immutable
-# therefore this displays an error
+# therefore this displays an error -TypeError as it is not allowed
 except FileExistsError as error:
     print("######## EXCEPT: FileNotFoundError ########")
     print("The EXCEPT / CATCH block only tuns if this error happens")
@@ -43,7 +43,7 @@ finally:
     print("The finally block is used to tidy up")
     if names_tuple:
         names_tuple = None
-
+# why is tuple value set to None in finally block? is this to 'reset' the tuple?
 # this is printed so that the program can continue to run
 print("After exception handling is finished....the program can continue")
 
